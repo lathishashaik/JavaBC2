@@ -10,14 +10,19 @@ public class WAudio {
 
 	public static void main(String[] args) throws UnsupportedAudioFileException, IOException, LineUnavailableException {
 		// TODO Auto-generated method stub
-		File audio1=new File("Time-to-Spare-An-Jone.wav");
-		AudioInputStream audioStream=AudioSystem.getAudioInputStream(audio1);
+		//audio1 not working..DONT KNOW WHY
+		//File audio1=new File("Time-to-Spare-An-Jone.wav");
+		File audio2=new File("C:\\Users\\DELL\\Documents\\SampleFIlesForJava\\Time-to-Spare-An-Jone.wav");
+		AudioInputStream audioStream=AudioSystem.getAudioInputStream(audio2);
 		Clip clip1=AudioSystem.getClip();
+		clip1.open(audioStream);
 		
 		Scanner scan=new Scanner(System.in);
+		String response="";
+		while(!response.equals("Q")) {
 		System.out.println("P=play , S=stop , R=reset , Q=Quit");
 		System.out.println("enter your choice");
-		String response=scan.nextLine();
+		response=scan.nextLine();
 		response=response.toUpperCase();
 		
 		switch(response) {
@@ -38,6 +43,7 @@ public class WAudio {
 			
 		}
 
+	}
 	}
 
 }

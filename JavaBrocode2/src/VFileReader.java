@@ -5,12 +5,14 @@ public class VFileReader {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		//Insted of throws can be surround by try catch block
-		FileReader reader1=new FileReader("Tpath_msg.txt");
+		//Instead of throws can be surround by try catch block
+		//writer1 not working..DONT KNOW WHY
+			//FileReader reader1=new FileReader("Tpath_msg.txt");
+		FileReader reader1=new FileReader("C:\\Users\\DELL\\Documents\\SampleFIlesForJava\\Tpath_msg.txt");
 		int data=reader1.read();
-		while(data!=1)//i.e end of the file
+		while(data!=-1)//i.e end of the file
 		{
-			System.out.println((char)data);
+			System.out.print((char)data);
 			data=reader1.read();
 			
 		}
