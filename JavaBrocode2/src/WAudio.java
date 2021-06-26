@@ -12,7 +12,7 @@ public class WAudio {
 		// TODO Auto-generated method stub
 		//audio1 not working..DONT KNOW WHY
 		//File audio1=new File("Time-to-Spare-An-Jone.wav");
-		File audio2=new File("C:\\Users\\DELL\\Documents\\SampleFIlesForJava\\Time-to-Spare-An-Jone.wav");
+		File audio2=new File("samplefiles\\Time-to-Spare-An-Jone.wav");
 		AudioInputStream audioStream=AudioSystem.getAudioInputStream(audio2);
 		Clip clip1=AudioSystem.getClip();
 		clip1.open(audioStream);

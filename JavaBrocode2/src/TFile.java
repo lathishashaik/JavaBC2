@@ -4,8 +4,8 @@ public class TFile {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //if file is in project folder mentioning name is enough else full path is required
-		//file1 not working..DONT KNOW WHY
-		File file1=new File("Tsecret_msg.txt");
+		
+		File file1=new File("samplefiles\\Tsecret_msg.txt");
 		if(file1.exists()) {
 			System.out.println("1.file exists");
 			System.out.println("1."+file1.getPath());
@@ -16,13 +16,13 @@ public class TFile {
 			System.out.println("1.file doesnot exists");
 		}
 		
-			
+	
 		
 		//will delete a file
 		//file1.delete();
 		//below file in file explorer
 		//two backslashes or 1 forwardslash
-		File file2=new File("C:\\Users\\DELL\\Documents\\SampleFIlesForJava\\Tpath_msg.txt");
+		File file2=new File("samplefiles\\Tpath_msg.txt");
 		if(file2.exists()) {
 			System.out.println("1.file exists");
 			System.out.println("1."+file2.getPath());

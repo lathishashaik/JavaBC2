@@ -8,7 +8,7 @@ public class VFileReader {
 		//Instead of throws can be surround by try catch block
 		//writer1 not working..DONT KNOW WHY
 			//FileReader reader1=new FileReader("Tpath_msg.txt");
-		FileReader reader1=new FileReader("C:\\Users\\DELL\\Documents\\SampleFIlesForJava\\Tpath_msg.txt");
+		FileReader reader1=new FileReader("samplefiles\\Tpath_msg.txt");
 		int data=reader1.read();
 		while(data!=-1)//i.e end of the file
 		{
